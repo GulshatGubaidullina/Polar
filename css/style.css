@@ -13,6 +13,15 @@ body {
 	margin: 0 auto;
 }
 
+.title {
+	margin-bottom: 65px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 61px;
+	color: #150101;
+}
+
 /* Btn start */
 
 .btn {
@@ -206,7 +215,7 @@ body {
 	font-size: 12px;
 }
 
-.links__item a:hover{
+.links__item a:hover {
 	opacity: 1;
 }
 
@@ -241,7 +250,7 @@ body {
 	border-radius: 5px;
 }
 
-.newsletter__btn:hover{
+.newsletter__btn:hover {
 	background-color: #ae305a;
 }
 
@@ -251,15 +260,6 @@ body {
 
 .products {
 	width: 100%;
-}
-
-.products__title {
-	margin-bottom: 65px;
-	text-align: center;
-	font-weight: 600;
-	font-size: 44px;
-	line-height: 61px;
-	color: #150101;
 }
 
 .products__nav {
@@ -334,3 +334,36 @@ body {
 .btn {}
 
 /* Products end */
+
+/* Pricing start */
+
+.pricing {
+	width: 100%;
+}
+
+.pricing__table {
+	margin-bottom: 100px;
+	opacity: 0.8;
+}
+
+.table__th {
+	padding: 5px 10px;
+	font-size: 24px;
+	border: 2px solid #D64374;
+}
+
+.table__td {
+	padding: 5px;
+	border: 2px solid #D64374;
+}
+
+.table__td a,
+.table__td a:visited {
+	color: inherit;
+}
+
+.table__td a:hover {
+	color: #D64374;
+}
+
+/* Pricing end */
