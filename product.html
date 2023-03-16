@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<a href="./index.html"><img src="./img/header/logo.svg" alt="Polar__logo" class="header__logo"></a>
+				<ul class="header__menu">
+					<li class="menu__item"><a href="./index.html">Home</a></li>
+					<li class="menu__item"><a href="./products.html">Product</a></li>
+					<li class="menu__item"><a href="./pricing.html">Pricing</a></li>
+					<li class="menu__item"><a href="#">Testimonials</a></li>
+					<li class="menu__item"><a href="#">Contact Us</a></li>
+				</ul>
+				<a href="#" class="btn">Buy Now</a>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<section class="product">
+			<div class="container">
+				<div class="product__inner">
+					<img src="./img/products/card1.jpg" alt="" class="product__img">
+					<div class="product__info">
+						<h2 class="product__title">Brown bread</h2>
+						<p class="product__price">$19.55</p>
+						<label for="product__count">How many kilograms:</label>
+						<input type="number" class="product__count" id="product__count" min="1" placeholder="1">
+						<p class="product__sum">Total cost: $<span class="sum__span"></span></p>
+						<button class="btn" onclick="buyProduct()">Buy</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__about">
+					<img src="./img/header/logo.svg" alt="Polar__logo" class="footer__logo">
+					<p class="footer__text">Some food has looked so awful that it's looked like something that the dog's brought
+						home.</p>
+					<div class="footer__socials">
+						<a href="#" class="social__img"><img src="./img/footer/facebook.svg" alt="facebook"></a>
+						<a href="#" class="social__img"><img src="./img/footer/twitter.svg" alt="twitter"></a>
+						<a href="#" class="social__img"><img src="./img/footer/instagram.svg" alt="instagram"></a>
+						<a href="#" class="social__img"><img src="./img/footer/linkedin.svg" alt="linkedin"></a>
+					</div>
+				</div>
+				<div class="footer__links">
+					<ul class="links__menu">
+						<li class="links__item"><a href="#">Delivery Information</a></li>
+						<li class="links__item"><a href="#">Terms & Condition</a></li>
+						<li class="links__item"><a href="#">Search Terms</a></li>
+						<li class="links__item"><a href="#">Order & Return</a></li>
+					</ul>
+					<ul class="links__menu">
+						<li class="links__item"><a href="#">Delivery Information</a></li>
+						<li class="links__item"><a href="#">Terms & Condition</a></li>
+						<li class="links__item"><a href="#">Search Terms</a></li>
+						<li class="links__item"><a href="#">Order & Return</a></li>
+					</ul>
+				</div>
+				<div class="footer__newsletter">
+					<p class="newsletter__title">Newsletter</p>
+					<div class="button-inside">
+						<input class="newsletter__input" placeholder="Your Email" type="text">
+						<button class="newsletter__btn">Subscribe</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="./app.js"></script>
+</body>
+</html>

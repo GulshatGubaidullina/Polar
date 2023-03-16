@@ -3,13 +3,13 @@
 
 body {
 	font-family: 'Hind Madurai', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 400;
 	color: #000;
 }
 
 .container {
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -22,10 +22,13 @@ body {
 	color: #150101;
 }
 
+.none{
+	display: none !important;
+}
+
 /* Btn start */
 
 .btn {
-	max-width: 170px;
 	padding: 14px 50px;
 	font-weight: 600;
 	line-height: 22px;
@@ -76,7 +79,7 @@ body {
 .menu__item a,
 .menu__item a:visited {
 	margin-right: 80px;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 16px;
 	color: #150101;
 	opacity: 0.6;
@@ -96,7 +99,7 @@ body {
 
 .intro {
 	width: 100%;
-	height: 85vh;
+	height: 90vh;
 	padding: 15vh 0 0 0;
 	background-color: #fbf0f4;
 	color: #0F0101;
@@ -112,7 +115,7 @@ body {
 .suptitle {
 	margin-bottom: 5px;
 	font-weight: 600;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 16px;
 	letter-spacing: 0.1em;
 }
@@ -172,7 +175,7 @@ body {
 .footer__text {
 	max-width: 210px;
 	margin-bottom: 25px;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 17px;
 	letter-spacing: 0.01em;
 	opacity: 0.7;
@@ -212,7 +215,7 @@ body {
 .links__item a:visited {
 	color: inherit;
 	opacity: 0.8;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .links__item a:hover {
@@ -260,6 +263,8 @@ body {
 
 .products {
 	width: 100%;
+	min-height: 90vh;
+	padding-bottom: 50px;
 }
 
 .products__nav {
@@ -281,24 +286,24 @@ body {
 
 .products__cards {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .products__card {
 	display: flex;
-	flex-direction: row;
+	flex-basis: 30%;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
-.card__img {
-	max-width: 580px;
-	margin-right: 80px;
-}
-
-.card__img:last-child {
-	margin: 0;
+.card__img:hover{
+	cursor: pointer;
+	opacity: 0.5;
 }
 
 .card__description {
@@ -352,6 +357,10 @@ body {
 	border: 2px solid #D64374;
 }
 
+.table__index:hover{
+	cursor: pointer;
+}
+
 .table__td {
 	padding: 5px;
 	border: 2px solid #D64374;
@@ -367,3 +376,50 @@ body {
 }
 
 /* Pricing end */
+
+/* Product start */
+
+.product{
+	width: 100%;
+	font-size: 24px;
+}
+
+.product__inner {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.product__img {
+	max-width: 50%;
+}
+.product__info {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+.product__title {
+	margin-bottom: 20px;
+	font-size: 50px;
+	font-weight: bold;
+}
+.product__price {
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.product__count {
+	margin-bottom: 25px;
+	padding: 5px 10px;
+	border: 2px solid #D64374;
+	border-radius: 5px;
+}
+.product__sum {
+	margin-bottom: 15px;
+}
+
+
+
+
+/* Product end */
