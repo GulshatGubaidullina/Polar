@@ -359,6 +359,7 @@ body {
 
 .table__index:hover{
 	cursor: pointer;
+	color: #D64374
 }
 
 .table__td {
